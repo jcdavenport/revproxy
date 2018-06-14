@@ -1,0 +1,21 @@
+version: '2'
+
+services:
+    reverseproxy:
+        image: reverseproxy
+        ports:
+            - 8080:8080
+            - 8081:8081
+        restart: always
+
+    webui:
+        depends_on:
+            - reverseproxy
+        image: rancher/rancher
+        restart: always
+
+    alpinefox:
+        depends_on:
+            - reverseproxy
+        image: jbbodart/alpine-novnc-firefox:latest
+        restart: always
