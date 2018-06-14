@@ -19,3 +19,10 @@ services:
             - reverseproxy
         image: jbbodart/alpine-novnc-firefox:latest
         restart: always
+        
+    kali:
+        depends_on:
+            - reverseproxy
+        image: jgamblin/kalibrowser-top10
+        restart: always
+        
