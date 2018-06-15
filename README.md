@@ -11,7 +11,7 @@ sudo chmod +x /usr/local/bin/docker-compose
 #git clone into rancherOS \
 alias git="docker run -ti --rm -v ${HOME}:/root -v $(pwd):/git bwits/docker-git-alpine"
 
-git clone https://github.com/jcdavenport/revproxy.git \
+git clone https://github.com/jcdavenport/revproxy.git 
 
 docker build -t reverseproxy ./path/to/directory/with/dockerfile/and/nginx.conf
 
