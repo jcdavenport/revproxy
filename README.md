@@ -4,6 +4,8 @@ nginx reverse-proxy for accessing Docker containers from web browser.
 
 INSTRUCTIONS:
 
+*First, install docker-compose as a container on RancherOS according to: https://docs.docker.com/compose/install/#install-compose.
+
 #git clone into rancherOS
 alias git="docker run -ti --rm -v ${HOME}:/root -v $(pwd):/git bwits/docker-git-alpine"
 
