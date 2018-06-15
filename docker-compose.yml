@@ -12,7 +12,7 @@ services:
     manage:
         depends_on:
             - reverseproxy
-        image: rancher/rancher
+        image: rancher/server
         restart: always
 
     alpinefox:
