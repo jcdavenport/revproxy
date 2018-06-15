@@ -21,7 +21,7 @@ docker-compose up -d
 
 
 
-##to access each gui server container \
+##to access each gui server container
 
 #WebUI container management \
 http://localhost:8080
