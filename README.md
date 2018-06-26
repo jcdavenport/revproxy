@@ -1,6 +1,7 @@
 # revproxy
 nginx reverse-proxy for accessing Docker containers from web browser.
 
+NOTE: This project is not complete and will not run correctly.
 
 INSTRUCTIONS:
 
